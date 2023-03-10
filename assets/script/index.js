@@ -41,16 +41,11 @@ set.addEventListener('click', () => {
     output.innerText = 'Please, enter valid a valid time.';
   }
 
+});
+
+function alarm() {
   if (output.innerText === `${hours.innerText}:${minutes.innerText}`) {
     icon.classList.add('shake');
     alarmSound.play();
   }
-});
-/*
-set.addEventListener('click', () => {
-  if (output.innerText = `${hours.innerText}:${minutes.innerText}`) {
-    icon.classList.add('shake');
-    alarmSound.play();
-  }
-});
-*/
+}
