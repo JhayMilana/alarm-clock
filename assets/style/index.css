@@ -1,0 +1,37 @@
+@import url('./reset.css');
+
+body {
+  background-color: var(--app-background-color);
+}
+
+.container {
+  margin-inline: auto;
+  width: min(100% - 30px, 1080px);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Variables
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+:root {
+  --app-blue: #3c57ff;
+  --app-blue-hover: #364ee6;
+  --app-white: #fff;
+  --app-background-color: #181b2d;
+  --app-time: #101219;
+  --section-bg-color: rgba(50, 67, 75, 0.5);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Main
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.clock {
+  color: var(--app-white);
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+}
