@@ -37,9 +37,4 @@ set.addEventListener('click', function() {
   } else {
     output.innerText = 'Please, enter valid a valid time.';
   }
-
-  if (output.innerText = `${hrs}:${min}`) {
-    icon.classList.add('anim');
-    alarmSound.play();
-  }
 });
