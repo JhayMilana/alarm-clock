@@ -2,9 +2,9 @@
 
 function displayTime() {
   let dateTime = new Date();
-  let hrs = dateTime.getHours();
-  let min = dateTime.getMinutes();
-  let sec = dateTime.getSeconds();
+  let hrs = dateTime.getHours().toString().padStart(2, 0);
+  let min = dateTime.getMinutes().toString().padStart(2, 0);
+  let sec = dateTime.getSeconds().toString().padStart(2, 0);
   let session = document.querySelector('#session');
 
   if(hrs >= 12) {
@@ -19,7 +19,7 @@ function displayTime() {
 
   document.querySelector('#hours').innerHTML = hrs;
   document.querySelector('#minutes').innerHTML = min;
-  document.querySelector('#seconds').innerHTML = sec;
+  document.querySelector('#seconds').innerHTML= sec;
 };
 
 setInterval(displayTime, 10);
