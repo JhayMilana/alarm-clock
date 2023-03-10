@@ -4,6 +4,7 @@ const set = document.querySelector('.set');
 const output = document.querySelector('.output p');
 const input = document.querySelector('.time');
 const shake = document.querySelector('.shake');
+const icon = document.querySelector('.fa-bell');
 const alarmSound = new Audio('./assets/audio/alarm-sound.mp3');
 alarmSound.type = 'audio/mp3';
 
@@ -36,10 +37,9 @@ set.addEventListener('click', function() {
   } else {
     output.innerText = 'Please, enter valid a valid time.';
   }
-});
 
-function alarm() {
   if (output.innerText = `${hrs}:${min}`) {
-    
+    icon.classList.add('anim');
+    alarmSound.play();
   }
-}
+});
