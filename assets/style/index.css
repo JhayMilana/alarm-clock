@@ -31,7 +31,7 @@ body {
   font-weight: bold;
   position: absolute;
   top: 40%;
-  left: 67%;
+  left: 67.5%;
   transform: translate(-50%, -50%);
   font-size: 80px;
 }
@@ -39,7 +39,7 @@ body {
 .buttons {
   position: absolute;
   top: 60%;
-  left: 71%;
+  left: 71.5%;
   transform: translate(-50%, -50%);
 }
 
@@ -70,16 +70,19 @@ input[type=text] {
 .icon { 
   position: absolute;
   top: 48%;
-  left: 49.5%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: var(--app-white);
   size: 20px;
 }
 
+.output {
+  display: grid;
+  place-items: center;
+}
+
 p {
-  position: absolute;
-  top: 51%;
-  left: 47.5%;
+  margin-top: 26%;
   color: white;
   font-size: 20px;
   text-align: center;

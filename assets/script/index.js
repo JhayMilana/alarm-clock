@@ -7,6 +7,9 @@ const shake = document.querySelector('.shake');
 const icon = document.querySelector('.fa-bell');
 const alarmSound = new Audio('./assets/audio/alarm-sound.mp3');
 alarmSound.type = 'audio/mp3';
+const hours = document.querySelector('#hours');
+const minutes = document.querySelector('#minutes');
+const seconds = document.querySelector('#seconds');
 
 function displayTime() {
   let dateTime = new Date();
@@ -14,9 +17,9 @@ function displayTime() {
   let min = dateTime.getMinutes().toString().padStart(2, 0);
   let sec = dateTime.getSeconds().toString().padStart(2, 0);
 
-  document.querySelector('#hours').innerHTML = hrs;
-  document.querySelector('#minutes').innerHTML = min;
-  document.querySelector('#seconds').innerHTML= sec;
+  hours.innerHTML = hrs;
+  minutes.innerHTML = min;
+  seconds.innerHTML= sec;
 };
 
 setInterval(displayTime, 10);
@@ -28,7 +31,7 @@ function isTime(a) {
   return false;
 }
 
-set.addEventListener('click', function() {
+set.addEventListener('click', () => {
   let a = input.value.trim();
 
   if (isTime(a)) {
@@ -37,4 +40,17 @@ set.addEventListener('click', function() {
   } else {
     output.innerText = 'Please, enter valid a valid time.';
   }
+
+  if (output.innerText === `${hours.innerText}:${minutes.innerText}`) {
+    icon.classList.add('shake');
+    alarmSound.play();
+  }
 });
+/*
+set.addEventListener('click', () => {
+  if (output.innerText = `${hours.innerText}:${minutes.innerText}`) {
+    icon.classList.add('shake');
+    alarmSound.play();
+  }
+});
+*/
