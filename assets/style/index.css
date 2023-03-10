@@ -33,16 +33,14 @@ body {
   top: 40%;
   left: 63%;
   transform: translate(-50%, -50%);
-  font-size: 70px;
-}
-
-.center {
-  display: grid;
-  place-items: center;
+  font-size: 80px;
 }
 
 .buttons {
-  padding-top: 30px;
+  position: absolute;
+  top: 60%;
+  left: 71%;
+  transform: translate(-50%, -50%);
 }
 
 input[type=button], input[type=text] {
@@ -69,8 +67,20 @@ input[type=text] {
  text-align: center;
 }
 
-.icon {
-  padding-top: 23%;
+.icon { 
+  position: absolute;
+  top: 48%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
   color: var(--app-white);
   size: 20px;
+}
+
+p {
+  position: absolute;
+  top: 51%;
+  left: 47.5%;
+  color: white;
+  font-size: 20px;
+  display: inline;
 }
