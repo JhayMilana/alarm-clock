@@ -23,3 +23,10 @@ function displayTime() {
 };
 
 setInterval(displayTime, 10);
+
+function isTime(arg) {
+  if (arg.length > 0 && arg.length <= 5 ) {
+    return true;
+  }
+  return false;
+}
