@@ -85,6 +85,13 @@ p {
   text-align: center;
 }
 
-.anim {
-  
+.shake {
+  animation: shake 2.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+}
+
+@keyframes shake {
+  10%, 90% { translate: 1px 0; }
+  20%, 80% { translate: 2px 0; }
+  30%, 50%, 70% { translate: -4px 0; }
+  40%, 60% { translate: 4px 0; }
 }

@@ -1,8 +1,11 @@
 'use strict';
 
-const set = document.querySelector('.set')
-const output = document.querySelector('.output p')
-const input = document.querySelector('.time')
+const set = document.querySelector('.set');
+const output = document.querySelector('.output p');
+const input = document.querySelector('.time');
+const shake = document.querySelector('.shake');
+const alarmSound = new Audio('./assets/audio/alarm-sound.mp3');
+alarmSound.type = 'audio/mp3';
 
 function displayTime() {
   let dateTime = new Date();
